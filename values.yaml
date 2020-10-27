@@ -1,0 +1,16 @@
+replicaCount: 2
+
+image:
+  repository: zetsuboutoshio/otus-demo
+
+service:
+  type: NodePort
+  port: 9000
+
+postgresql:
+  enabled: true
+  postgresqlUsername: otus
+  postgresqlPassword: otus
+  postgresqlDatabase: otus
+  service:
+    port: "5432"

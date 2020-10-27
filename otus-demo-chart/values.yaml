@@ -1,0 +1,16 @@
+replicaCount: 2
+
+image:
+  repository: 
+
+service:
+  type: 
+  port: 
+
+postgresql:
+  enabled: true
+  postgresqlUsername: 
+  postgresqlPassword: 
+  postgresqlDatabase: 
+  service:
+    port: 

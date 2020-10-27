@@ -1,5 +1,8 @@
 # otus-sa-hw2
 
-## Установка Postgres
+## Установка repo с зависимостями
   helm repo add bitnami https://charts.bitnami.com/bitnami
-  helm install pg bitnami/postgresql
+
+## Старт
+  helm install otus-demo ./otus-demo-chart -f values.yaml
+
