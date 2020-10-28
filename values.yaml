@@ -3,9 +3,8 @@ replicaCount: 2
 image:
   repository: zetsuboutoshio/otus-demo
 
-service:
-  type: NodePort
-  port: 9000
+host: arch.homework
+routePrefix: /otusapp/vtimoshenko
 
 postgresql:
   enabled: true

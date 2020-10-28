@@ -1,8 +1,19 @@
 # otus-sa-hw2
-
-## Установка repo с зависимостями
-  helm repo add bitnami https://charts.bitnami.com/bitnami
+Helm-chart для разворачивания demo-сервиса. Имеет в зафисимостях postgres chart из bitnami repo. 
 
 ## Старт
   helm install otus-demo ./otus-demo-chart -f values.yaml
 
+## Тест
+  curl -H "Host:arch.homework" http://{HOST}/otusapp/vtimoshenko/health
+
+или внести правки в /etc/hosts и запускать без хедера:
+
+  curl http://{HOST}/otusapp/vtimoshenko/health
+  
+## Api-тесты из Postman 
+Предварительно необходимо изменить хост на ip ingress'а в user_api_postman_collection.json  
+
+  newman run user_api_postman_collection.json
+
+  

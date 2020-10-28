@@ -4,8 +4,11 @@ image:
   repository: 
 
 service:
-  type: 
-  port: 
+  type: NodePort
+  port: 9000
+
+host:
+routePrefix:
 
 postgresql:
   enabled: true
