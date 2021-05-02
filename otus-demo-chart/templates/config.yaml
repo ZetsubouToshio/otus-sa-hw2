@@ -4,6 +4,6 @@ metadata:
   name: otus-demo-secret
 type: Opaque
 data:
-  DATASOURCE_URL: {{ printf "jdbc:postgresql://%s-postgresql:%s/%s" .Release.Name .Values.postgresql.service.port .Values.postgresql.postgresqlDatabase  | b64enc | quote }}
+  DATASOURCE_URL: {{ printf "jdbc:postgresql://postgres:%s/%s" .Values.postgresql.service.port .Values.postgresql.postgresqlDatabase  | b64enc | quote }}
   DATASOURCE_USERNAME: {{ printf "%s" .Values.postgresql.postgresqlUsername | b64enc | quote }}
   DATASOURCE_PASSWORD: {{ printf "%s" .Values.postgresql.postgresqlPassword  | b64enc | quote }} 

@@ -9,11 +9,3 @@ service:
 
 host:
 routePrefix:
-
-postgresql:
-  enabled: true
-  postgresqlUsername: 
-  postgresqlPassword: 
-  postgresqlDatabase: 
-  service:
-    port: 

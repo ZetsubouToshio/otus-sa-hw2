@@ -1,4 +1,4 @@
-apiVersion: v2
+lapiVersion: v2
 name: otus-demo-chart
 description: A Helm chart for Kubernetes
 
@@ -20,11 +20,11 @@ version: 1.0.0
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
-appVersion: 0.0.3
+appVersion: 0.0.6
 
 dependencies:
   - name: postgresql
-    version: 9.8.7
+    version: '^8'
     repository: https://charts.bitnami.com/bitnami
     condition: postgresql.enabled
     tags:
